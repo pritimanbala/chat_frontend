@@ -37,7 +37,7 @@ const Portal = () => {
   const fetchData = async () => {
     try {
       const res = await axios.get(
-        "http://chatbackend-production-ed04.up.railway.app/api/login",
+        "https://chatbackend-production-ed04.up.railway.app/api/login",
         {
           params: formData,
         }
@@ -55,7 +55,7 @@ const Portal = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://chatbackend-production-ed04.up.railway.app/api/room",
+        "https://chatbackend-production-ed04.up.railway.app/api/room",
         messageNew,
         {
           headers: {

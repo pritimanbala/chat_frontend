@@ -35,7 +35,7 @@ const Login = () => {
       e.preventDefault();
       //then send a get request to send your data to the server
       const res = await axios.get(
-        "http://chatbackend-production-ed04.up.railway.app/api/login",
+        "https://chatbackend-production-ed04.up.railway.app/api/login",
         {
           params: formData,
         }
