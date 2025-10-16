@@ -1,6 +1,7 @@
 import { io } from "socket.io-client";
 
-//connect to the particular socket
-const socket = io("http://localhost:3000", { autoConnect: false });
+const socket = io("https://chatbackend-production-ed04.up.railway.app", {
+  autoConnect: false,
+});
 
 export default socket;

@@ -36,9 +36,12 @@ const Portal = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/login", {
-        params: formData,
-      });
+      const res = await axios.get(
+        "http://chatbackend-production-ed04.up.railway.app/api/login",
+        {
+          params: formData,
+        }
+      );
       if (res.data.data.messages.length > 0) {
         setAllMsg(res.data.data.messages);
       }
@@ -52,7 +55,7 @@ const Portal = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/room",
+        "http://chatbackend-production-ed04.up.railway.app/api/room",
         messageNew,
         {
           headers: {

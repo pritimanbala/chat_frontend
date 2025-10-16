@@ -34,9 +34,12 @@ const Login = () => {
       //do prevent default
       e.preventDefault();
       //then send a get request to send your data to the server
-      const res = await axios.get("http://localhost:3000/api/login", {
-        params: formData,
-      });
+      const res = await axios.get(
+        "http://chatbackend-production-ed04.up.railway.app/api/login",
+        {
+          params: formData,
+        }
+      );
       console.log(res.data);
       console.log(res.data.success);
       // then take the response object and then check the status
