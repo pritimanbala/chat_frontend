@@ -37,7 +37,7 @@ const Create = () => {
       const payload = { room_code, password, username };
       console.log("here its okay");
       const res = await axios.post(
-        "https://chatbackend-production-ed04.up.railway.app/api/create",
+        "http://localhost:3001/api/create",
         payload,
         {
           headers: {
